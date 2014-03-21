@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E39EFB3D1CF444DFA03BC4BE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 680AA98265EF43AF9D33E9BD /* libPods.a */; };
 		FF93645C18B9F72C00ED7F77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF93645B18B9F72C00ED7F77 /* Foundation.framework */; };
 		FF93645E18B9F72C00ED7F77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF93645D18B9F72C00ED7F77 /* CoreGraphics.framework */; };
 		FF93646018B9F72D00ED7F77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF93645F18B9F72D00ED7F77 /* UIKit.framework */; };
@@ -19,6 +20,14 @@
 		FF93647718B9F72D00ED7F77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF93645F18B9F72D00ED7F77 /* UIKit.framework */; };
 		FF93647F18B9F72D00ED7F77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF93647D18B9F72D00ED7F77 /* InfoPlist.strings */; };
 		FF93648118B9F72D00ED7F77 /* FJBBlurViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF93648018B9F72D00ED7F77 /* FJBBlurViewTests.m */; };
+		FF93648D18B9F76900ED7F77 /* FJBTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF93648C18B9F76900ED7F77 /* FJBTestViewController.m */; };
+		FF93649218B9F86400ED7F77 /* imagect.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF93649118B9F86400ED7F77 /* imagect.jpg */; };
+		FFBF6BF418BA080A003E97D0 /* FJBBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF6BF318BA080A003E97D0 /* FJBBlurView.m */; };
+		FFBF6BF818BA1681003E97D0 /* GPUImageGaussianBlurFilter+FJBBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF6BF718BA1681003E97D0 /* GPUImageGaussianBlurFilter+FJBBlur.m */; };
+		FFBF6BFB18BA1716003E97D0 /* GPUImageiOSBlurFilter+FJBBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF6BFA18BA1716003E97D0 /* GPUImageiOSBlurFilter+FJBBlur.m */; };
+		FFBF6BFE18BA2E1B003E97D0 /* UIView+FJBBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF6BFD18BA2E1B003E97D0 /* UIView+FJBBlur.m */; };
+		FFBF6C0018BA3FD6003E97D0 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFBF6BFF18BA3FD5003E97D0 /* bg1.jpg */; };
+		FFBF6C0218BA42BD003E97D0 /* nature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFBF6C0118BA42BD003E97D0 /* nature.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AF9A99CCB3949F6B811D49F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		680AA98265EF43AF9D33E9BD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF93645818B9F72C00ED7F77 /* FJBBlurView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJBBlurView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF93645B18B9F72C00ED7F77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FF93645D18B9F72C00ED7F77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +59,20 @@
 		FF93647C18B9F72D00ED7F77 /* FJBBlurViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FJBBlurViewTests-Info.plist"; sourceTree = "<group>"; };
 		FF93647E18B9F72D00ED7F77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF93648018B9F72D00ED7F77 /* FJBBlurViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJBBlurViewTests.m; sourceTree = "<group>"; };
+		FF93648B18B9F76900ED7F77 /* FJBTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJBTestViewController.h; sourceTree = "<group>"; };
+		FF93648C18B9F76900ED7F77 /* FJBTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJBTestViewController.m; sourceTree = "<group>"; };
+		FF93649118B9F86400ED7F77 /* imagect.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = imagect.jpg; path = Resources/imagect.jpg; sourceTree = "<group>"; };
+		FFBF6BF218BA080A003E97D0 /* FJBBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FJBBlurView.h; path = src/FJBBlurView.h; sourceTree = "<group>"; };
+		FFBF6BF318BA080A003E97D0 /* FJBBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FJBBlurView.m; path = src/FJBBlurView.m; sourceTree = "<group>"; };
+		FFBF6BF518BA163F003E97D0 /* FJBBlurProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FJBBlurProtocol.h; path = src/FJBBlurProtocol.h; sourceTree = "<group>"; };
+		FFBF6BF618BA1681003E97D0 /* GPUImageGaussianBlurFilter+FJBBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GPUImageGaussianBlurFilter+FJBBlur.h"; path = "src/GPUImageGaussianBlurFilter+FJBBlur.h"; sourceTree = "<group>"; };
+		FFBF6BF718BA1681003E97D0 /* GPUImageGaussianBlurFilter+FJBBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GPUImageGaussianBlurFilter+FJBBlur.m"; path = "src/GPUImageGaussianBlurFilter+FJBBlur.m"; sourceTree = "<group>"; };
+		FFBF6BF918BA1716003E97D0 /* GPUImageiOSBlurFilter+FJBBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GPUImageiOSBlurFilter+FJBBlur.h"; path = "src/GPUImageiOSBlurFilter+FJBBlur.h"; sourceTree = "<group>"; };
+		FFBF6BFA18BA1716003E97D0 /* GPUImageiOSBlurFilter+FJBBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GPUImageiOSBlurFilter+FJBBlur.m"; path = "src/GPUImageiOSBlurFilter+FJBBlur.m"; sourceTree = "<group>"; };
+		FFBF6BFC18BA2E1B003E97D0 /* UIView+FJBBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FJBBlur.h"; path = "src/UIView+FJBBlur.h"; sourceTree = "<group>"; };
+		FFBF6BFD18BA2E1B003E97D0 /* UIView+FJBBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FJBBlur.m"; path = "src/UIView+FJBBlur.m"; sourceTree = "<group>"; };
+		FFBF6BFF18BA3FD5003E97D0 /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpg; sourceTree = "<group>"; };
+		FFBF6C0118BA42BD003E97D0 /* nature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nature.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,7 @@
 				FF93645E18B9F72C00ED7F77 /* CoreGraphics.framework in Frameworks */,
 				FF93646018B9F72D00ED7F77 /* UIKit.framework in Frameworks */,
 				FF93645C18B9F72C00ED7F77 /* Foundation.framework in Frameworks */,
+				E39EFB3D1CF444DFA03BC4BE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +107,7 @@
 				FF93647A18B9F72D00ED7F77 /* FJBBlurViewTests */,
 				FF93645A18B9F72C00ED7F77 /* Frameworks */,
 				FF93645918B9F72C00ED7F77 /* Products */,
+				0AF9A99CCB3949F6B811D49F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +127,7 @@
 				FF93645D18B9F72C00ED7F77 /* CoreGraphics.framework */,
 				FF93645F18B9F72D00ED7F77 /* UIKit.framework */,
 				FF93647418B9F72D00ED7F77 /* XCTest.framework */,
+				680AA98265EF43AF9D33E9BD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,9 +135,13 @@
 		FF93646118B9F72D00ED7F77 /* FJBBlurView */ = {
 			isa = PBXGroup;
 			children = (
+				FF93648A18B9F73E00ED7F77 /* src */,
 				FF93646A18B9F72D00ED7F77 /* FJBAppDelegate.h */,
 				FF93646B18B9F72D00ED7F77 /* FJBAppDelegate.m */,
+				FF93648B18B9F76900ED7F77 /* FJBTestViewController.h */,
+				FF93648C18B9F76900ED7F77 /* FJBTestViewController.m */,
 				FF93646D18B9F72D00ED7F77 /* Images.xcassets */,
+				FF93648E18B9F79E00ED7F77 /* Resources */,
 				FF93646218B9F72D00ED7F77 /* Supporting Files */,
 			);
 			path = FJBBlurView;
@@ -144,6 +176,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FF93648A18B9F73E00ED7F77 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF6BF218BA080A003E97D0 /* FJBBlurView.h */,
+				FFBF6BF318BA080A003E97D0 /* FJBBlurView.m */,
+				FFBF6BF518BA163F003E97D0 /* FJBBlurProtocol.h */,
+				FFBF6BF618BA1681003E97D0 /* GPUImageGaussianBlurFilter+FJBBlur.h */,
+				FFBF6BF718BA1681003E97D0 /* GPUImageGaussianBlurFilter+FJBBlur.m */,
+				FFBF6BF918BA1716003E97D0 /* GPUImageiOSBlurFilter+FJBBlur.h */,
+				FFBF6BFA18BA1716003E97D0 /* GPUImageiOSBlurFilter+FJBBlur.m */,
+				FFBF6BFC18BA2E1B003E97D0 /* UIView+FJBBlur.h */,
+				FFBF6BFD18BA2E1B003E97D0 /* UIView+FJBBlur.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		FF93648E18B9F79E00ED7F77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF6C0118BA42BD003E97D0 /* nature.jpg */,
+				FFBF6BFF18BA3FD5003E97D0 /* bg1.jpg */,
+				FF93649118B9F86400ED7F77 /* imagect.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF93648418B9F72D00ED7F77 /* Build configuration list for PBXNativeTarget "FJBBlurView" */;
 			buildPhases = (
+				A3897931A7AD4EDC99AF14EA /* Check Pods Manifest.lock */,
 				FF93645418B9F72C00ED7F77 /* Sources */,
 				FF93645518B9F72C00ED7F77 /* Frameworks */,
 				FF93645618B9F72C00ED7F77 /* Resources */,
+				4233E71FB7EF40078A09E4C9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,8 +280,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBF6C0218BA42BD003E97D0 /* nature.jpg in Resources */,
+				FFBF6C0018BA3FD6003E97D0 /* bg1.jpg in Resources */,
 				FF93646618B9F72D00ED7F77 /* InfoPlist.strings in Resources */,
 				FF93646E18B9F72D00ED7F77 /* Images.xcassets in Resources */,
+				FF93649218B9F86400ED7F77 /* imagect.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,13 +298,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4233E71FB7EF40078A09E4C9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3897931A7AD4EDC99AF14EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF93645418B9F72C00ED7F77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBF6BFE18BA2E1B003E97D0 /* UIView+FJBBlur.m in Sources */,
 				FF93646818B9F72D00ED7F77 /* main.m in Sources */,
 				FF93646C18B9F72D00ED7F77 /* FJBAppDelegate.m in Sources */,
+				FFBF6BF818BA1681003E97D0 /* GPUImageGaussianBlurFilter+FJBBlur.m in Sources */,
+				FFBF6BFB18BA1716003E97D0 /* GPUImageiOSBlurFilter+FJBBlur.m in Sources */,
+				FF93648D18B9F76900ED7F77 /* FJBTestViewController.m in Sources */,
+				FFBF6BF418BA080A003E97D0 /* FJBBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +460,7 @@
 		};
 		FF93648518B9F72D00ED7F77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF9A99CCB3949F6B811D49F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -372,6 +474,7 @@
 		};
 		FF93648618B9F72D00ED7F77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF9A99CCB3949F6B811D49F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -444,6 +547,7 @@
 				FF93648618B9F72D00ED7F77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF93648718B9F72D00ED7F77 /* Build configuration list for PBXNativeTarget "FJBBlurViewTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +556,7 @@
 				FF93648918B9F72D00ED7F77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
