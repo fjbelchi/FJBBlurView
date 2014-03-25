@@ -10,7 +10,10 @@
 #import "FJBBlurView.h"
 
 @interface UIView (FJBBlur)
-- (void)addBlurView;
+@property (nonatomic, strong) FJBBlurView *blurView;
+/*
+- (void)addBlurViewWithRadius:(CGFloat)radius;
 - (void)removeBlurView;
 - (FJBBlurView *) blurView;
+ */
 @end

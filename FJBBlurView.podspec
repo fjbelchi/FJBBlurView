@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/fjbelchi/FJBBlurView'
   s.author   = { 'Francisco J. Belchi' => 'fjbelchi@gmail.com' }
   s.source   = { :git => 'https://github.com/fjbelchi/FJBBlurView.git', :tag => "#{s.version}" }
-  s.source_files = 'src/*'
+  s.source_files = 'FJBBlurView/src/*'
   s.requires_arc = true
-  s.dependency  'GPUImage', '~> 0.1.2'
+  s.dependency  'GPUImage', '0.1.2'
   s.license = { :type => 'MIT License', :file => 'LICENSE' }
 end

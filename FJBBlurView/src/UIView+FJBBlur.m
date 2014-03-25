@@ -7,30 +7,32 @@
 //
 
 #import "UIView+FJBBlur.h"
+#import <objc/runtime.h>
 
-static dispatch_once_t once;
-static FJBBlurView *blur;
+
+NSString const *blurKey = @"fjblurView.blurKey";
 
 @implementation UIView (FJBBlur)
 
-- (void)addBlurView
+- (void)setBlurView:(FJBBlurView *)blurView
 {
-    __weak typeof(self) weakSelf = self;
-    dispatch_once(&once, ^{
-        blur = [[FJBBlurView alloc] initWithView:weakSelf withBlurStyle:FJBBlurStyleGaussianBlur];
-        blur.alpha = 0.f;
-        [weakSelf insertSubview:blur belowSubview:weakSelf];
-    });
+    objc_setAssociatedObject(self, &blurKey, blurView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)removeBlurView
+- (FJBBlurView *)blurView
 {
-    [blur removeFromSuperview];
-}
+    FJBBlurView *blurView = objc_getAssociatedObject(self, &blurKey);
 
-- (FJBBlurView *) blurView
-{
-    return blur;
+    if (blurView) {
+        return blurView;
+    }
+    
+    blurView = [[FJBBlurView alloc] initWithView:self withBlurStyle:FJBBlurStyleGaussianBlur];
+    blurView.alpha = 0.f;
+    
+    [self setBlurView:blurView];
+    
+    return blurView;
 }
 
 

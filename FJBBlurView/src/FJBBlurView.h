@@ -15,8 +15,10 @@ typedef NS_ENUM(NSInteger, FJBBlurStyle) {
 };
 
 @interface FJBBlurView : GPUImageView
+@property (nonatomic, assign) CGFloat blurRadius;
+
 - (instancetype) initWithView:(UIView *)view withBlurStyle:(FJBBlurStyle)blurStyle;
 - (void)update;
-- (void)blurWithRadius:(CGFloat)radius animated:(BOOL)animated;
-- (void)unBlurAnimated:(BOOL)animated;
+- (void)blurAnimated:(BOOL)animated withDuration:(CGFloat)duration;
+- (void)unBlurAnimated:(BOOL)animated withDuration:(CGFloat)duration;
 @end
