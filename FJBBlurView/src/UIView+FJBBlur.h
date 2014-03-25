@@ -11,9 +11,4 @@
 
 @interface UIView (FJBBlur)
 @property (nonatomic, strong) FJBBlurView *blurView;
-/*
-- (void)addBlurViewWithRadius:(CGFloat)radius;
-- (void)removeBlurView;
-- (FJBBlurView *) blurView;
- */
 @end
